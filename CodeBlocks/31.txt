@@ -1,0 +1,8 @@
+Conversation.UpdateContainer(
+                builder =>
+                {
+                    builder.Register(c => new ServiceFabricBotDataStore("Insurance"))
+                    .As<IBotDataStore<BotData>>().InstancePerLifetimeScope();
+                });
+
+config.DependencyResolver = new AutofacWebApiDependencyResolver(Conversation.Container);

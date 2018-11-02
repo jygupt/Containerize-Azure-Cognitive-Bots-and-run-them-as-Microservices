@@ -1,0 +1,1 @@
+<Endpoint Name="HttpServiceEndpoint" Type="Input" Protocol="http" Port="8770" />

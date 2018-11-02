@@ -1,0 +1,2 @@
+builder.Register(c => new ServiceFabricBotDataStore("Master"))
+                    .As<IBotDataStore<BotData>>().InstancePerLifetimeScope();
