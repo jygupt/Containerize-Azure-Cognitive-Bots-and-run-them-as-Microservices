@@ -34,7 +34,7 @@ Prior to starting these labs, you must have the following operating system and s
 - [Post-lab: Additional Exercise (Optional): Set up of Resources - Service Fabric Cluster, Api Management and Bot Channel Registration](03%20-setup-resources-and-environment.md)
 
 ## Whiteboard Session workshop
-- [Workshop](Workshop-CustomerScenario)
+- [Workshop](Workshop-CustomerScenario.md)
 ---
 
 ## Notes
