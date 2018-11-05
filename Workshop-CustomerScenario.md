@@ -49,13 +49,14 @@ The company wants to build a solution that is both scalable, fast and extensible
 7. The customer is looking for separate language understanding models for each of their bots.
 10. Detect anomalies such as fraud detection.
 
-## Customer objections
-1. In which of our requirements AI solutions can be leveraged?
-1. We have heard about Actor programming model. Does it fit somewhere in our Architecture?
-2. We are concerned about where to store all the incoming messages and scope for further processing
-3. We are also concerned about how to obfuscate the sensitive information before storing the incoming messages. Can "AI" solutions help   here?
-4. Where should we ingest our technical logs and what is the best way to visualize it?
-5. We know that both pre-built AI and custom AI options available. We are confused as to when to choose one over the other.
+## Customer considerations
+1. How bot-to-bot communication will happen? What could be the challenges we might face? Any overheads of this approach?
+2. In which of our requirements AI solutions can be leveraged?
+3. We have heard about Actor programming model. Does it fit somewhere in our Architecture?
+4. We are concerned about where to store all the incoming messages and scope for further processing
+5. We are also concerned about how to obfuscate the sensitive information before storing the incoming messages. Can "AI" solutions help   here?
+6. Where should we ingest our technical logs and what is the best way to visualize it?
+7. We know that both pre-built AI and custom AI options available. We are confused as to when to choose one over the other.
 
 ## Step 2: Design a proof of concept solution
 
@@ -78,6 +79,8 @@ _Bots_
 1. How would you recognize if user wants to talk about standard banking services and insurance services? What if user changes the context from buying a new policy to checking the account balance? Can this be achieved without mixing the language understaning models?
 
 2. Do we need another bot to fulfill the common services across bots like human hand-off, ingesting incoming messages and fraud detection?
+
+3. How bot-to-bot communication will happen? Any considerations to keep in mind. 
 
 _Summarizing chat text_
 1. Which AI solution is better to summarize the conversation? Is it enough to extract just the key phrases to recognize the intent? Can we use any other open source library in the future to make this procedure more accurate?
