@@ -1,12 +1,12 @@
 # Orchestrating multiple Intelligent AI Bots as one business with Azure Service Fabric
 
 # Workshop
-In this workshop, you will look at the process of designing multiple intelligent bots as one business that will illustrate the use of many Azure features to support scalability, performance and intelligence based on Service Fabric and other cognitive services.
+In this workshop, you will look at the process of designing multiple intelligent bots as one business that will illustrate the use of many Azure features to support scalability, performance, and intelligence based on Service Fabric and other cognitive services.
 
-By the end of this workshop you will be better able to design and deploy enterprise ready bots based on Service Fabric and other related Azure services.
+By the end of this workshop, you will be better able to design and deploy enterprise-ready bots based on Service Fabric and other related Azure services.
 
 # Whiteboard Design Session
-In this whiteboard design session, you will work in a group to design a solution that leverages aspects from microservices, bot framework, storage and other cognitive services to help an online financial service provider to meet their customer demands quickly. You will handle the client's scaling and performance needs through microservices built on top of Service Fabric and apply cognitive services to put intelligence in the bot solution.
+In this whiteboard design session, you will work in a group to design a solution that leverages aspects from microservices, bot framework, storage, and other cognitive services to help an online financial service provider to meet their customer demands quickly. You will handle the client's scaling and performance needs through microservices built on top of Service Fabric and apply cognitive services to put intelligence in the bot solution.
 
 ## Step 1: Review the customer case study
 
@@ -16,7 +16,7 @@ Timeframe: 15 minutes
 
 ## Customer situation
 
-OneBank is a global financial service provider which offers various online banking services to its customers across many countries. The current OneBank solution consists of a collection of web sites and web APIs hosted on Azure service fabric with 100s of VMs running. The company has a dedicated DevOps experts for maintaining and monitoring the service fabric based applications. Recently, OneBank has experienced tremendous growth trends in its regular online banking and insurance sector. In order for OneBank to meet their customer demands better, the company wants to invest in deploying bots in their existing architecture. To start with, they want to have two separate dedicated bots; one for standard banking services and another for providing insurance services.
+OneBank is a global financial service provider which offers various online banking services to its customers across many countries. The current OneBank solution consists of a collection of websites and web APIs hosted on Azure service fabric with 100s of VMs running. The company has dedicated DevOps experts for maintaining and monitoring the service fabric based applications. Recently, OneBank has experienced tremendous growth trends in its regular online banking and insurance sector. In order for OneBank to meet their customer demands better, the company wants to invest in deploying bots in their existing architecture. To start with, they want to have two separate dedicated bots; one for standard banking services and another for providing insurance services.
 
 **Standard Banking Services Bot Features**
 1) Check account balance
@@ -28,7 +28,7 @@ OneBank is a global financial service provider which offers various online banki
 2) Renew policy
 3) Check policy details
 
-The company wants to build a solution that is both scalable, fast and extensible so that they can introduce more business specific bots in the near future. In conjuction with this, they are also looking for some common services across all their bots as shown below:-
+The company wants to build a solution that is both scalable, fast and extensible so that they can introduce more business specific bots in the near future. In conjunction with this, they are also looking for some common services across all their bots as shown below:-
 
 **Common services across all bots**
 1) Human hand off aka Talk to human
@@ -40,12 +40,12 @@ The company wants to build a solution that is both scalable, fast and extensible
 
 1. OneBank would like to deploy these bots in their existing Azure service fabric cluster.
 2. Bot solution needs to be scalable to support high demand over the weekdays. Scaling a bot up or down should not impact other bots.
-3. Automatically respond to frequently asked questions regardless of whether it is related to standard banking services, insurance or anything    else.
+3. Automatically respond to frequently asked questions regardless of whether it is related to standard banking services, insurance or anything else.
 4. The chat solution must provide support for sentiment analysis and contextual understanding.
 2. Bots can be accessed from multiple channels like web chat and facebook.
 4. All the incoming messages must be stored in the cloud for further processing. The solution should obfuscate any sensitive data present in      the messages such as credit card numbers, phone numbers and pin codes before putting it into the storage. 
-5. One of the major common services across their bots is Human hand-off. They would like to initiate a chat session with the human if the user    demands it or if the sentiment score of the conversation is negative. Before beginning the session, the solution must gather last 15           minutes conversation with the user, summarize it by extracting the useful key phrases, so that the agent doesn't have go through with the      entire conversation and could find the intent based on the key phrases easily.  
-6. Due to security and performance reasons they want to store the bot state inside the Azure service fabric.
+5. One of the major common services across their bots is Human hand-off. They would like to initiate a chat session with the human if the user    demands it or if the sentiment score of the conversation is negative. Before beginning the session, the solution must gather last 15           minutes conversation with the user, summarize it by extracting the useful key phrases, so that the agent doesn't have to go through with the      entire conversation and could find the intent based on the key phrases easily.  
+6. Due to security and performance reasons, they want to store the bot state inside the Azure service fabric.
 7. The customer is looking for separate language understanding models for each of their bots.
 10. Detect anomalies such as fraud detection.
 
@@ -76,23 +76,23 @@ Without getting into the details (the following sections will address the partic
 
 _Bots_
 
-1. How would you recognize if user wants to talk about standard banking services and insurance services? What if user changes the context from buying a new policy to checking the account balance? Can this be achieved without mixing the language understaning models?
+1. How would you recognize if a user wants to talk about standard banking services and insurance services? What if a user changes the context from buying a new policy to checking the account balance? Can this be achieved without mixing the language understanding models?
 
 2. Do we need another bot to fulfill the common services across bots like human hand-off, ingesting incoming messages and fraud detection?
 
-3. How bot-to-bot communication will happen? Any considerations to keep in mind. 
+3. What would be the best approach to forwarding requests from one bot to another?
 
 _Summarizing chat text_
 1. Which AI solution is better to summarize the conversation? Is it enough to extract just the key phrases to recognize the intent? Can we use any other open source library in the future to make this procedure more accurate?
 
 _Bot state_
-1. How stateful actors can be leveraged to store the bot states within the cluster. Is it reliable? What happens to the state during upgrade roll-outs? What would be the best strategy to manage the state from performance perspective?
+1. How stateful actors can be leveraged to store the bot states within the cluster. Is it reliable? What happens to the state during upgrade roll-outs? What would be the best strategy to manage the state from a performance perspective?
 
 _Sentiment Analysis_
 1. How would you recommend OneBank to identify the sentiment in the incoming messages? Would this require you to build a custom AI model? Is there a pre-built AI service you could use?
 
 _Fraud detection_
-1. Does Azure Machine Learning has any pre-built models to recognize frauds? If no, what would be the plan for this?
+1. Does Azure Machine Learning have any pre-built models to recognize frauds? If no, what would be the plan for this?
 
 
 ## Step 3: Present the solution
