@@ -21,11 +21,9 @@ OneBank is a global financial service provider which offers various online banki
 **Standard Banking Services Bot Features**
 1) Check account balance
 2) Transfer money
-3) Download statements
 
 **Insurance Service Bot Features** 
 1) Buy a new policy
-2) Renew policy
 3) Check policy details
 
 The company wants to build a solution that is both scalable, fast and extensible so that they can introduce more business specific bots in the near future. In conjunction with this, they are also looking for some common services across all their bots as shown below:-
