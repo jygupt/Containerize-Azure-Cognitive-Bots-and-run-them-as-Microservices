@@ -44,7 +44,7 @@ The company wants to build a solution that is both scalable, fast and extensible
 4. The chat solution must provide support for sentiment analysis and contextual understanding.
 2. Bots can be accessed from multiple channels like web chat and facebook.
 4. All the incoming messages must be stored in the cloud for further processing. The solution should obfuscate any sensitive data present in      the messages such as credit card numbers, phone numbers and pin codes before putting it into the storage. 
-5. One of the major common services across their bots is Human hand-off. They would like to initiate a chat session with the human if the user    demands it or if the sentiment score of the conversation is negative. Before beginning the session, the solution must gather last 15           minutes conversation with the user, summarize it by extracting the useful key phrases, so that the agent doesn't have to go through with the      entire conversation and could find the intent based on the key phrases easily.  
+5. One of the major common services across their bots is Human hand-off. They would like to initiate a chat session with the human if the user    demands it. Before beginning the session, the solution must gather last 15           minutes conversation with the user, summarize it by extracting the useful key phrases, so that the agent doesn't have to go through with the      entire conversation and could find the intent based on the key phrases easily.  
 6. Due to security and performance reasons, they want to store the bot state inside the Azure service fabric.
 7. The customer is looking for separate language understanding models for each of their bots.
 10. Detect anomalies such as fraud detection.
@@ -55,8 +55,9 @@ The company wants to build a solution that is both scalable, fast and extensible
 3. We have heard about Actor programming model. Does it fit somewhere in our Architecture?
 4. We are concerned about where to store all the incoming messages and scope for further processing
 5. We are also concerned about how to obfuscate the sensitive information before storing the incoming messages. Can "AI" solutions help   here?
-6. Where should we ingest our technical logs and what is the best way to visualize it?
+6. Where should we ingest our technical logs and what is the best way to visualize the traffic across all the bots?
 7. We know that both pre-built AI and custom AI options available. We are confused as to when to choose one over the other.
+8. How messages will be redirected from bot to an agent.
 
 ## Step 2: Design a proof of concept solution
 
