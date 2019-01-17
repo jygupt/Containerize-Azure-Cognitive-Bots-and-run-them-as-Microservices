@@ -12,7 +12,7 @@ In this whiteboard design session, you will work in a group to design a solution
 
 Step 1: Review the customer case study with all the participants in the group
 
-Timeframe: 15 minutes
+Timeframe: 30 minutes
 
 ## Customer situation
 
