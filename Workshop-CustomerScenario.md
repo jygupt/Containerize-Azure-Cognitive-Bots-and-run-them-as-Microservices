@@ -98,7 +98,7 @@ _Fraud detection_
 
 Present a solution to the target customer audience in a 15-minute chalk-talk format.
 
-Timeframe: 30 minutes
+Timeframe: 60 minutes
 
 **Presentation**
 
