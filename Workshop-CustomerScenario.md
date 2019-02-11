@@ -31,8 +31,7 @@ The company wants to build a solution that is both scalable, fast and extensible
 **Common services across all bots**
 1) Human hand off aka Talk to human
 2) Capturing all the incoming messages for analytics
-3) Fraud detection
-4) Answer frequently asked questions
+3) Answer frequently asked questions
 
 ## Customer needs
 
