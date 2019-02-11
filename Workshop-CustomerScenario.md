@@ -44,7 +44,6 @@ The company wants to build a solution that is both scalable, fast and extensible
 5. One of the major common services across their bots is Human hand-off. They would like to initiate a chat session with the human if the user    demands it. Before beginning the session, the solution must gather last 15           minutes conversation with the user, summarize it by extracting the useful key phrases, so that the agent doesn't have to go through with the      entire conversation and could find the intent based on the key phrases easily.  
 6. Due to security and performance reasons, they want to store the bot state inside the Azure service fabric.
 7. The customer is looking for separate language understanding models for each of their bots.
-10. Detect anomalies such as fraud detection.
 
 ## Customer considerations
 1. How bot-to-bot communication will happen? What could be the challenges we might face? Any overheads of this approach?
